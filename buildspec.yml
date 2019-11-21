@@ -10,10 +10,10 @@ phases:
     commands:
       - echo "we are in the pre build phase"
   build:
-      commands:
-        - echo "we are in the build block"
-        - echo "we will run some test"
-        - grep -Fq "Congratulations" index.html
+    commands:
+      - echo "we are in the build block"
+      - echo "we will run some test"
+      - grep -Fq "Congratulations" index.html
   post_build:
-      commands:
-        - echo "we are in the last build phase"
+    commands:
+      - echo "we are in the last build phase"
